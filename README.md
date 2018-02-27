@@ -1,6 +1,6 @@
-# Welcome to Poppy's blog!
+# Welcome to StrvieMeet's blog!
 
-[![Build Status](https://travis-ci.org/LyonYang/blogs.svg?branch=master)](https://travis-ci.org/gm111115/study-notes)
+[![Build Status](https://travis-ci.org/StrvieMeet/notes.svg?branch=master)](https://travis-ci.org/StrvieMeet/notes)
 
 ## 说明
 
