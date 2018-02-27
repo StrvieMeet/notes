@@ -19,5 +19,5 @@ git status
 sleep 5
 git add .
 git commit -m "Update gh-pages"
-git remote add origin git@github.com:/StrvieMeet/notes.git
+git remote add origin git@github.com:StrvieMeet/notes.git
 git push -f "https://${GH_TOKEN}@${GH_REF}" gh-pages:gh-pages
