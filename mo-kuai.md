@@ -305,7 +305,70 @@ D、6
 C：我们想要使用结构化时间就要使用到time.localtime,结构化时间在显示的时候共有9对数据
 ```
 
-###### 
+9、我们在计算机中使用time.localtime\(\)获取到的是一个元祖，那这个元祖中对应的时间是以下那个\(\)
+
+A、全球时间
+
+B、网络时间
+
+C、操作系统时间
+
+D、中欧时间
+
+```
+正确答案：C
+```
+
+```
+C：我们所看到的时间是操作系统的时间。
+```
+
+10、读以下代码，选择你认为的结果\(\)
+
+```
+import time
+print(time.strftime('%m-%Y-%d %H:%M:%S'))
+```
+
+A、18-05-22 16:54:01
+
+B、2018-05-22 17:01:12
+
+C、05-2018-22 17:01:46
+
+D、22-2018-05 17:01:46
+
+```
+正确答案：B
+```
+
+```
+B：%Y对应的是年,%m对应的是月,%d对应的是日,%H对应的是时,%M对应的是分,%S对应的是秒
+```
+
+11、读以下代码，选择你认为的结果\(\)
+
+```
+import time
+t = time.strftime('%m-%Y-%d %H:%M:%S')
+print(time.strptime(t,'%m-%Y-%d %H:%M:%S'))
+```
+
+A、time.struct\_time\(tm\_year=5, tm\_mon=2018, tm\_mday=22, tm\_hour=17, tm\_min=15, tm\_sec=10, tm\_wday=1, tm\_yday=142, tm\_isdst=-1\)
+
+B、time.struct\_time\(tm\_year=2018, tm\_mon=5, tm\_mday=22, tm\_hour=17, tm\_min=15, tm\_sec=10, tm\_wday=1, tm\_yday=142, tm\_isdst=-1\)
+
+C、time.struct\_time\(tm\_year=18, tm\_mon=5, tm\_mday=22, tm\_hour=17, tm\_min=15, tm\_sec=10, tm\_wday=1, tm\_yday=142, tm\_isdst=-1\)
+
+D、time.struct\_time\(tm\_year=22, tm\_mon=5, tm\_mday=2018, tm\_hour=17, tm\_min=15, tm\_sec=10, tm\_wday=1, tm\_yday=142, tm\_isdst=-1\)
+
+```
+正确答案：B
+```
+
+```
+B：%Y对应的是年,%m对应的是月,%d对应的是日,%H对应的是时,%M对应的是分,%S对应的是秒
+```
 
 ###### 填空题
 
@@ -423,6 +486,26 @@ time.time()获得的是时间戳，只不过这个时间对人不太友好，它
 
 ```
 我们使用的time.strftime格式化时间，time.strftime()获取到的是字符串，提供给用户查看。
+```
+
+12、python中我们获取到结构化时间，想要将这个结构化时间转化成时间戳用time模块中的\_\_\_\_\_方法
+
+```
+正确答案：time.mktime()
+```
+
+```
+我们使用的time.mktime()方法就可以把结构化时间转换成时间戳
+```
+
+13、python中我们获取到字符串时间，想要将这个字符串时间转化成结构化时间用time模块中的\_\_\_\_\_方法
+
+```
+正确答案：time.strptime()
+```
+
+```
+我们使用的time.strptime()方法就可以把字符串时间转换成结构化时间
 ```
 
 
