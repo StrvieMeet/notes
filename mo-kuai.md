@@ -159,6 +159,49 @@ D、tm\_year,tm\_day,tm\_mon
 D：time.localtime中没有tm_day这样的参数
 ```
 
+9 读以下代码，random.choice\('python'\)中选择你认为打印出来正确的结果\(\)
+
+```
+import random
+print(random.choice('python'))
+```
+
+A、p
+
+B、y
+
+C、py
+
+D、o
+
+```
+正确答案：A,B,D
+```
+
+```
+C：因为random.choice是选择其中元素中任意一个返回
+```
+
+10 random.choice从序列中获取一个随机元素。其函数原型为：random.choice\(sequence\)参数sequence表示一个类型\(\)
+
+A、可迭代
+
+B、无序
+
+C、有序
+
+D、可变的
+
+```
+正确答案：A,C,D
+```
+
+```
+B：random.choice(sequence)这个里的参数不能是无序的
+```
+
+###### 
+
 ###### 单选题
 
 1、我们知道在开发中想要提高开发效率需要使用模块，那在python中怎样调用模块（）
@@ -458,7 +501,31 @@ slice = random.sample(list, 6)
 print(slice)
 ```
 
+A、random.sample\(list, 6\),list对应的是一个数据类型,6代表从数据的起点跨6个数
 
+B、random.sample\(list, 6\),list对应的是一个数据类型,6代表从数据的终点跨6个数
+
+C、random.sample\(list, 6\),list对应的只能是列表,6代表从数据的中提取6个数
+
+D、random.sample\(list, 6\),list对应的是一个数据类型,6代表从数据的中提取6个数
+
+```
+正确答案：D
+```
+
+```
+D：random.sample(list, 6),list对应的是一个数据类型,6代表从数据的中提取6个数
+```
+
+17 random.choice从序列中获取一个随机元素。其函数原型为：random.choice\(sequence\)。参数sequence表示一个类型\(\)
+
+A、可迭代
+
+B、无序
+
+C、有序
+
+D、可变的
 
 ###### 填空题
 
