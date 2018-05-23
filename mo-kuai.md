@@ -431,6 +431,35 @@ D、步长,,终止位置
 B：下限,上限
 ```
 
+15 我们知道\(random\)随机数模块中有sample功能,以下描述正确的是\(\)
+
+A、random.sample\(sequence, k\)，从指定序列中随机获取指定长度的片断。sample函数会将原有序列打乱。
+
+B、random.sample\(sequence, k\)，从指定序列中随机获取指定长度的片断。sample函数不会修改原有序列。
+
+C、random.sample\(sequence, k\)，从指定序列中随机获取指定长度的片断。sample函数会修改原有序列。
+
+D、random.sample\(sequence, k\)，从指定序列中随机获取指定长度的片断。sample函数会将原有序列改成降序。
+
+```
+正确答案：B
+```
+
+```
+B：random.sample(sequence, k)，从指定序列中随机获取指定长度的片断。sample函数不会修改原有序列。
+```
+
+16 读以下代码，random.sample\(list, 6\)中选择你认为解释正确的结果\(\)
+
+```
+import random
+list = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10,11,12]
+slice = random.sample(list, 6)
+print(slice)
+```
+
+
+
 ###### 填空题
 
 1、我们要使用别人写好的模块\(第三方模块\)首先需要安装，python中如何源码安装模块的时候我们需要执行 python setup.py build进行编译，然后使用什么命令进行安装\_\_\_\_\_\_。
