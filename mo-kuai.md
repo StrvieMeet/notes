@@ -517,15 +517,7 @@ D、random.sample\(list, 6\),list对应的是一个数据类型,6代表从数据
 D：random.sample(list, 6),list对应的是一个数据类型,6代表从数据的中提取6个数
 ```
 
-17 random.choice从序列中获取一个随机元素。其函数原型为：random.choice\(sequence\)。参数sequence表示一个类型\(\)
-
-A、可迭代
-
-B、无序
-
-C、有序
-
-D、可变的
+17 random.random\(\)用于生成以下哪种
 
 ###### 填空题
 
