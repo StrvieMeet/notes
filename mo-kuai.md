@@ -236,9 +236,23 @@ D、在调用的时候传不传参数都行
 A,C:os.getcwd()在调用的时候需要加括号,但是括号中不能加参数
 ```
 
-###### 
+13 os.basename是获取我们写的路径中的基名,以下显示正确的是\(\)
 
-###### 
+A、C:\Users\93202\Desktop\自动化
+
+B、Desktop\自动化
+
+C、自动化
+
+D、C:\Users\93202\Desktop
+
+```
+正确答案：A,C
+```
+
+```
+A,C:os.getcwd()在调用的时候需要加括号,但是括号中不能加参数
+```
 
 ###### 
 
@@ -677,7 +691,7 @@ Users
         ├── hello.py    - 文件
         ├── word.py     - 文件
         └── web         - 目录
-        
+
 import os
 if os.path.exists('hell.py'):
     print('文件存在',os.getcwd()+'test2.py')
@@ -719,21 +733,168 @@ D、无法获取到路劲
 B:获取的是dirname中文件的前部分路径,不包含文件
 ```
 
+24 os.basename是获取我们写的路径中的基名,以下显示正确的是\(\)
 
+A、C:\Users\93202\Desktop\自动化
 
+B、Desktop\自动化
 
+C、自动化
 
+D、C:\Users\93202\Desktop
 
+```
+C
+```
 
+```
+C:os.basename是获取我们写的路径中的基名,正确的是自动化
+```
 
+25 os.mkdir\(\) 方法用于以数字权限模式创建目录,读以下代码选择参数解释正确的
 
+```
+os.mkdir(path,mode)
+```
 
+A、path是要打开文件的路径,mode是读取方式
 
+B、path是要打开文件的路径,mode是对文件的权限
 
+C、path是要创建文件的路径,mode是读取方式
 
+D、path是要创建文件的路径,,mode是对文件的权限
 
+```
+D
+```
 
+```
+D:os.mkdir(path,mode)path是要创建文件的路径,,mode是对文件的权限
+```
 
+26 os.makedirs\(\) 方法用于以数字权限模式创建目录,读以下代码选择参数解释正确的
+
+```
+os.makedirs(path,mode)
+```
+
+A、path是要打开文件的路径,mode是读取方式
+
+B、path是要创建文件的路径,,mode是对文件的权限
+
+C、path是要创建文件的路径,mode是读取方式
+
+D、path是要打开文件的路径,mode是对文件的权限 
+
+```
+B
+```
+
+```
+B:os.makedirs(path,mode)path是要创建文件的路径,,mode是对文件的权限
+```
+
+27 我们使用os.stat功能能够获取当前文件的详细信息,在多个关键字中st\_atime代表的意思是\(\)
+
+A、文件创建时间
+
+B、文件上次修改时间
+
+C、文件上次访问时间
+
+D、文件同步时间 
+
+```
+C
+```
+
+```
+C:我们使用os.stat功能能够获取当前文件的详细信息,在多个关键字中st_atime代表的意思是文件上次访问时间
+```
+
+28 读一下代码\(os.stat\),以下中正确的结果是\(\)
+
+```
+import os
+ret = os.stat('test.py')
+print(ret)
+```
+
+A、C:\Users\93202\Desktop\自动化
+
+B、C:\Users\93202\Desktop\自动化\test.py
+
+C、os.stat\_result\(st\_mode=33206, st\_ino=18858823439676712, st\_dev=3430564453, st\_nlink=1, st\_uid=0, st\_gid=0, st\_size=4669, st\_atime=1526374697, st\_mtime=1526374697, st\_ctime=1522815833\)
+
+D、os.stat\_result\(st\_mode=33206, st\_ino=18858823439676712, st\_dev=3430564453, st\_nlink=1, st\_uid=0, st\_gid=0, st\_size=4669, st\_atime=1526374697, st\_mtime=1526374697, st\_createtime=1522815833\)
+
+```
+C
+```
+
+```
+os.stat_result(st_mode=33206, st_ino=18858823439676712, st_dev=3430564453, st_nlink=1, st_uid=0, st_gid=0, st_size=4669, st_atime=1526374697, st_mtime=1526374697, st_ctime=1522815833)
+```
+
+29 读一下代码\(os.rename\),以下中正确的结果是\(\)
+
+```
+Users
+└── coding
+    └── python
+        ├── hello.py    - 文件
+        ├── word.py     - 文件
+        └── web         - 目录
+
+import os
+if os.rename("hello.py","hello2.py"):
+    print('098K')
+elif os.rename("hello2.py","hello.py"):
+    print('6666')
+else:
+    print('erro')
+```
+
+A、098k
+
+B、erro
+
+C、报错
+
+D、6666
+
+```
+B
+```
+
+```
+正确答案是B,因为os.rename没有返回值所以打印出来的是erro
+```
+
+###### 
+
+###### 
+
+###### 
+
+###### 
+
+###### 
+
+###### 
+
+###### 
+
+###### 
+
+###### 
+
+###### 
+
+###### 
+
+###### 
 
 ###### 填空题
 
@@ -934,6 +1095,63 @@ random.randint(a, b)，用于生成一个指定范围内的整数。其中参数
 
 ```
 我们在写代码的时候会有去除文件名的需求,我们知道os模块中提供这个方法,这个方法是os.path.dirname
+```
+
+20 读一下代码\(os.path.abspath模块\),以下代码是在windows系统上运行,最终返回的结果是\(Ture/False\)中其中一个,这句话正确吗?\_\_\_\_\_\(回答:正确/不正确\)
+
+```
+Users
+└── coding
+    └── python
+        ├── hello.py    - 文件
+        ├── word.py     - 文件
+        └── web         - 目录
+
+import os
+print(os.path.abspath(r'Users\coding\python\hello.py'))
+
+答案:不正确
+解析:返回的是字符串
+```
+
+21 os模块下有这获取我们想要的某个路径下的文件的基名,要使用到os模块下的那个方法os.\_\_\_\_\_\_
+
+```
+正确答案:basename
+```
+
+```
+os模块下有这获取我们想要的某个路径下的文件的基名,要使用到os模块下的那个方法os.basename
+```
+
+22 os.mkdir\(\) 方法用于以数字权限模式创建目录。默认的模式为 \_\_\_\_\_ \(八进制\)。
+
+```
+正确答案：777
+```
+
+```
+os.mkdir() 方法用于以数字权限模式创建目录。默认的模式为 777 (八进制)。
+```
+
+23 os.makedirs\(\) 方法用于递归的创建目录,mkdir\(\)只能只能创建单个文件夹这个描述正确吗?\_\_\_\_\_\(正确/不正确\)
+
+```
+正确答案：正确
+```
+
+```
+os.makedirs() 方法用于递归的创建目录,mkdir()只能只能创建单个文件夹
+```
+
+24 我们在使用代码操作文件的时候想将文件修改什么os下什么功能os.\_\_\_\_\_\_\_
+
+```
+rename
+```
+
+```
+我们在使用代码操作文件的时候想将文件修改什么os下什么功能os.rename
 ```
 
 
