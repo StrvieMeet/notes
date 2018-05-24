@@ -1164,5 +1164,35 @@ isdir
 如果path是一个存在的目录，则返回True。否则返回False。这个方法是os.isdir
 ```
 
+26 如果path是一个存在的文件，则返回True。否则返回False。这个方法是os.\_\_\_\_
+
+```
+isfile
+```
+
+```
+如果path是一个存在的文件，则返回True。否则返回False。这个方法是os.isfile
+```
+
+27 如果path是绝对路径，则返回True。否则返回False。这个方法是os.\_\_\_\_\(不用加括号\)
+
+```
+isabs
+```
+
+```
+如果path是绝对路径，则返回True。否则返回False。这个方法是os.isabs
+```
+
+28 我们使用os模块改变当前工作目录,这个方法是os.\_\_\_\_\(不用加括号\)
+
+```
+chdir
+```
+
+```
+如果path是绝对路径，则返回True。否则返回False。这个方法是os.isabs
+```
+
 
 
