@@ -1029,6 +1029,46 @@ C
 
 在shutil模块中shutil.copyfileobj\(fsrc, fdst\[, length\]\)中fsrc,fdst,length分别对应的是新文件,源文件,一次读取多少内容
 
+37 shutil模块中可以进行递归执行的是\(\)
+
+A、shutil.rmtree
+
+B、shutil.move
+
+C、shutil.copytree
+
+D、shutil.copy2
+
+```
+A,B,C
+```
+
+```
+D是不可以进行递归
+```
+
+37 shutil模块中有个压缩文件的方法是shutil.make\_archive，这个方法中root\_dir参数一下描述正确的是\(\)
+
+A、用户
+
+B、组
+
+C、要压缩的文件路径
+
+D、要压缩的格式
+
+```
+C
+```
+
+```
+shutil模块中有个压缩文件的方法是shutil.make_archive，这个方法中root_dir参数一下描述正确的是要压缩的文件路径
+```
+
+###### 
+
+###### 
+
 ###### 
 
 ###### 填空题
@@ -1406,6 +1446,32 @@ platform
 sys.modules是一个全局字典，该字典是python启动后就加载在内存中。每当程序员导入新的模块，sys.modules
 将自动记录该模块。当第二次再导入该模块时，python会直接到字典中查找，从而加快了程序运行的速度。它拥有字典所拥有的一切方法,这句话是正确的(正确/不正确)
 ```
+
+36 我们在使用shutil模块中有个可以递归copy多个目录到指定目录下这个方法是shutil.\_\_\_\_\_\_（不加括号）
+
+```
+copytree
+```
+
+```
+我们在使用shutil模块中有个可以递归copy多个目录到指定目录下这个方法是shutil.copytree
+```
+
+39 在shutil模块中可以进行可以递归删除目录下的目录及文件的方法是shutil.\_\_\_\_\(不加括号\)
+
+```
+rmtree
+```
+
+```
+在shutil模块中可以进行可以递归删除目录下的目录及文件的方法是shutil.rmtree
+```
+
+40 我们知道shutil模块有一个功能是打包文件，这个打包文件的方法是shutil.\_\_\_\_\_\_\_\(不加括号\)
+
+`shutil.make_archive`
+
+我们知道shutil模块有一个功能是打包文件，这个打包文件的方法是`shutil.make_archive`
 
 
 
