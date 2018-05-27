@@ -979,7 +979,7 @@ D
 sys.argv获取到的是列表
 ```
 
-34 shutil.copymode\( src, dst\) 以下对这个模块描述正确的是\(\)
+34 shutil.copymode\( src, dst\) 以下对这个模块描述正确的是\(\)
 
 A、copy文件
 
@@ -997,7 +997,37 @@ C
 shutil.copymode( src, dst) 只是会复制其权限其他的东西是不会被复制的
 ```
 
-###### 
+35 copyfile\( src, dst\) 从源src复制到dst中去。当然前提是目标地址是具备可写权限。抛出的异常信息为IOException. 如果当前的dst已存在的话\(\)
+
+A、不做任何操作
+
+B、将原文件覆盖
+
+C、在源文件中追加写入
+
+D、报错
+
+```
+B
+```
+
+```
+copyfile( src, dst) 从源src复制到dst中去。当然前提是目标地址是具备可写权限。抛出的异常信息为IOException. 如果当前的dst已存在的话将原文件覆盖
+```
+
+36 在shutil模块中shutil.copyfileobj\(fsrc, fdst\[, length\]\)中fsrc,fdst,length分别对应的是\(\)
+
+A、新文件,源文件,复制多少内容
+
+B、源文件,新文件,复制多少内容
+
+C、新文件,源文件,一次读取多少内容
+
+D、源文件,新文件,一次读取多少内容
+
+C
+
+在shutil模块中shutil.copyfileobj\(fsrc, fdst\[, length\]\)中fsrc,fdst,length分别对应的是新文件,源文件,一次读取多少内容
 
 ###### 
 
