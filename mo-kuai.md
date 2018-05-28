@@ -1047,7 +1047,7 @@ A,B,C
 D是不可以进行递归
 ```
 
-37 shutil模块中有个压缩文件的方法是shutil.make\_archive，这个方法中root\_dir参数一下描述正确的是\(\)
+38 shutil模块中有个压缩文件的方法是shutil.make\_archive，这个方法中root\_dir参数一下描述正确的是\(\)
 
 A、用户
 
@@ -1065,7 +1065,162 @@ C
 shutil模块中有个压缩文件的方法是shutil.make_archive，这个方法中root_dir参数一下描述正确的是要压缩的文件路径
 ```
 
-###### 
+39 我们在运行代码的时候想要等待别的代码执行完后5秒在执行别的代码,使用以下那个方法\(\) 
+
+ A、time.clock\(\)
+
+B、time.gmtime\(\)
+
+C、time.sleep\(\)
+
+D、time.asctime\(\)                              
+
+```
+C
+```
+
+```
+我们在运行代码的时候想要等待别的代码执行完后5秒在执行别的代码,使用time.sleep()
+```
+
+40 读一下代码\(time模块\),选择你认为是对的答案\(\)
+
+```
+import time
+time.sleep(5)
+print('hello')
+```
+
+A、直接打印hello
+
+B、打印完hello,以后程序才结束
+
+C、先卡顿,然后打印hello
+
+D、不会打印
+
+```
+C
+```
+
+```
+我们在运行代码的时候想要等待别的代码执行完后5秒在执行别的代码,使用time.sleep()
+```
+
+41 读以下代码,\(time.mktime\)选择正确结果\(\)
+
+```
+import time
+a="2017-04-13"
+print(time.mktime(time.strptime(a,'%Y-%m-%d')))
+```
+
+A、17-04-13
+
+B、1492012800.0
+
+C、149201280.00
+
+D、2017-04-13
+
+```
+B
+```
+
+```
+读以下代码,(时间转换)选择正确结果1492012800.0
+```
+
+ 42 读以下代码,\(time.strftime\)选择正确结果\(\)
+
+```
+import time
+x = time.localtime(1492012800.0)
+print (time.strftime('%Y-%m-%d %H:%M:%S',x))
+```
+
+A、17-04-13
+
+B、1492012800.0
+
+C、2017-04-13
+
+D、2017-04-13 00:00:00
+
+```
+D
+```
+
+```
+读以下代码,(time.strftime)选择正确结果2017-04-13 00:00:00
+```
+
+43 读以下代码\(datetime转换\),选择正确结果\(\)
+
+```
+import datetime
+print(datetime.datetime.now().strftime("%Y-%m-%d %H:%M:%S"))
+```
+
+A、18-05-28
+
+B、1527473835.0347328
+
+C、2018-05-28 10:12:08
+
+D、2018-05-28 
+
+```
+C
+```
+
+```
+读以下代码(datetime转换),选择正确结果2018-05-28 10:12:08
+```
+
+44 读以下代码\(datetime指定时间\),选择正确结果\(\)
+
+```
+import datetime
+today = datetime.date.today()
+first = datetime.date(day=1, month=today.month, year=today.year)
+lastMonth = first - datetime.timedelta(days=1)
+print(lastMonth)
+```
+
+A、18-05-28
+
+B、1527473835.0347328
+
+C、2018-04-30 10:12:08
+
+D、2018-04-30
+
+```
+D
+```
+
+```
+读以下代码(datetime指定时间),选择正确结果2018-04-30
+```
+
+45 在sys模块中有个方法可以知道线程切换时间间隔，默认是0.005秒这个方法是\(\)
+
+A、sys.getfilesystemencoding\(\)
+
+B、sys.setdefaultencoding\(\)
+
+C、sys.getwindowsversion\(\)
+
+D、sys.setswitchinterval\(\)
+
+```
+D
+```
+
+```
+在sys模块中有个方法可以知道线程切换时间间隔，默认是0.005秒这个方法是sys.setswitchinterval()
+```
 
 ###### 
 
@@ -1473,5 +1628,31 @@ rmtree
 
 我们知道shutil模块有一个功能是打包文件，这个打包文件的方法是`shutil.make_archive`
 
+41 在sys模块中有个sys.getdefaultencoding\(\)方法可以获取当前操作系统,这句话描述的正确吗\_\_\_\_\_\(正确/不正确\)
 
+不正确
+
+在sys模块中有个sys.getdefaultencoding\(\)方法可以获取当前操作系统,这句话描述的不正确的
+
+41 time.**clock\(\)**在不同的系统上含义不同。在UNIX系统上，它返回的是“进程时间”，它是用秒表示的浮点数（时间戳）。而在WINDOWS中，第一次调用，返回的是进程运行的实际时间。而第二次之后的调用是自第一次调用以后到现在的运行时间。（实际上是以WIN32上QueryPerformanceCounter\(\)为基础，它比毫秒表示更为精确）这个描述正确吗\_\_\_\_\_\_\_\(正确/不正确\)
+
+42 在sys模块中有个可以获取python解释器的版本信息,这个方法是sys.\_\_\_\_\_\_\_
+
+version
+
+在sys模块中有个可以获取python解释器的版本信息,这个方法是sys.version
+
+43 以下代码的执行结果是当前\_\_\_\_信息
+
+线程
+
+以下代码的执行结果是当前线程信息
+
+44 sys模块中返回异常信息三元元组,这个方法是sys.\_\_\_\_\_\_\(不加括号\)
+
+```
+exc_info
+```
+
+sys模块中返回异常信息三元元组,这个方法是sys.exc\_info
 
